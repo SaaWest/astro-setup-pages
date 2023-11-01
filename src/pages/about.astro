@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "About Me";
 ---
 
 <html lang="en">
@@ -8,7 +8,16 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Home Page</title>
+		<title>{pageTitle}</title>
+
+		<style>
+			h1
+			{
+				color: seagreen;
+				text-transform: uppercase;
+			}
+
+		</style>
 	</head>
 	<body>
 	<nav>
@@ -17,6 +26,7 @@
         <a href="/blog/">Blog</a>        
 	</nav>
 	</nav>
-		<h1>Homepage</h1>
+
+		<h1>{pageTitle}</h1>
 	</body>
 </html>
